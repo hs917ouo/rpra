@@ -14,12 +14,11 @@ export default function AddMemo() {
         Memo
       </label>
       <textarea
-        id='memo'
         value={memo}
         onChange={(e) => setMemo(e.target.value)}
         placeholder='Write your memo here'
         rows={5}
-        className='mb-4 w-full resize-none rounded border border-gray-300 p-2' // mb-4로 아래 버튼과 여백 추가
+        className='mb-4 w-full resize-none rounded border border-gray-300 p-2'
       />
       <button
         type='submit'

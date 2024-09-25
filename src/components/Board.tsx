@@ -7,7 +7,9 @@ export default function Board({ note }: Props) {
     <>
       {note.map((page) => (
         <div key={page.id} className='border-b p-2'>
-          <p>{page.memo}</p>
+          <p className='text-start'>
+            {page.id} {page.memo}
+          </p>
         </div>
       ))}
     </>
